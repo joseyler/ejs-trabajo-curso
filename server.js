@@ -27,5 +27,10 @@ app.get('/about', function (req, res) {
     res.render('pages/about');
 });
 
+// about page
+app.get('/css/appcss', function (req, res) {
+    res.render('css/appcss');
+});
+
 app.listen(8004);
 console.log('8004 is the magic port');
