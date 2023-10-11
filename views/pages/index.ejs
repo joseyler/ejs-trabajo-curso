@@ -11,55 +11,54 @@
         <%- include('../partials/header'); %>
     </header>
 
-    <main>
-        <!-- Div contenedor paneles laterales y tablas sprint -->
-        <div class="dd-flex justify-content-between">
-            <div class="d-flex flex-row flex-nowrap mt-4">
-                <div class="w-25">
-                    <%- include('../partials/panelizquierdo'); %>
+  <main>
+    <!-- Div contenedor paneles laterales y tablas sprint -->
+    <div class="dd-flex justify-content-between">
+      <div class="d-flex flex-row flex-nowrap mt-4">
+        <div class="w-25">
+          <%- include('../partials/panelizquierdo'); %>
+        </div>
+        <div class="w-50">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Sprint 1
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <!-- reemplazar contenido sprint 1 -->
+                <div>
+                  <%- include('../partials/sprint'); %>
+                                
                 </div>
-                <div class="w-50">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    Sprint 1
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <!-- reemplazar contenido sprint 1 -->
-                                <div class="borde">
-                                    <%- include('../partials/sprint'); %>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo">
-                                    Sprint 2
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <!-- reemplazar contenido sprint 1 -->
-                                <div class="borde">
-                                    <%- include('../partials/sprint2'); %>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-25">
-                    <!-- panel derecho -->
-                </div>
+              </div>
             </div>
-    </main>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Sprint 2
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <!-- reemplazar contenido sprint 1 -->
+                <div>
+                  Aca va contenido sprint 2
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-25">
+            <%- include('../partials/panel_derecho'); %>  
+        </div>
+      </div>
+    </div>
+  </main>
 
     <footer>
         <%- include('../partials/footer'); %>
